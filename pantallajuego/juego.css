@@ -1,0 +1,36 @@
+.canon{
+    /* transform: rotate(51deg); */
+    position: absolute;
+    top: 70vh;
+    left: 90vh;
+}
+
+.animateEnemy{
+    position: relative;
+    animation: move 2.5s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+
+    65%{
+        transform: translateX(100vh);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.balaAnimada {
+    position: absolute;
+    animation: moverCirculo 0.5s linear forwards; /* 2s es la duración de la animación */
+}
+
+@keyframes moverCirculo {
+    to {
+        transform: translateY(calc(150px - 100vh)); /* Punto final en el eje X (100vw es el ancho total de la ventana) */
+    }
+}
